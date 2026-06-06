@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MHD NIHAD - Cybersecurity Researcher, Web Designer, UX/UI Developer & React Developer Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "YcJwrN5YTckjZ55kt",
+          });
+       })();
+    </script>
+
+    <title>MHD NIHAD | Cybersecurity & Web Development Portfolio</title>
+</head>
+<body>
+    
+    <!-- Scroll Progress Indicator Bar -->
+    <div id="scroll-progress"></div>
+    
+    <!-- Immersive 3D Parallax Foliage Edge Layers -->
+    <div class="parallax-leaf leaf-left-1" data-speed="0.25">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Monstera Leaf Shape -->
+            <path d="M60 10C85 30 110 60 110 90C110 105 95 115 80 115C60 115 40 95 10 95C10 65 35 35 60 10Z" fill="var(--accent-emerald)" opacity="0.35"/>
+            <path d="M60 10 L60 115" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+            <path d="M60 40 Q40 50 15 52" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+            <path d="M60 60 Q80 70 102 75" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+        </svg>
+    </div>
+    
+    <div class="parallax-leaf leaf-right-1" data-speed="-0.15">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Tropical Palm Frond -->
+            <path d="M10 90 C35 65 65 35 90 10 C75 35 55 65 10 90 Z" fill="var(--accent-emerald)" opacity="0.25"/>
+            <path d="M10 90 Q35 75 60 45" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+        </svg>
+    </div>
+    
+    <div class="parallax-leaf leaf-left-2" data-speed="0.3">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 10C85 30 110 60 110 90C110 105 95 115 80 115C60 115 40 95 10 95C10 65 35 35 60 10Z" fill="var(--accent-emerald)" opacity="0.3"/>
+        </svg>
+    </div>
+    
+    <div class="parallax-leaf leaf-right-2" data-speed="-0.2">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 90 C35 65 65 35 90 10 C75 35 55 65 10 90 Z" fill="var(--accent-emerald)" opacity="0.25"/>
+        </svg>
+    </div>
+    
+    <div class="parallax-leaf leaf-left-3" data-speed="0.15">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 10C85 30 110 60 110 90C110 105 95 115 80 115C60 115 40 95 10 95C10 65 35 35 60 10Z" fill="var(--accent-emerald)" opacity="0.3"/>
+        </svg>
+    </div>
+
+    <!-- Subway Overgrown Train Floating Header Pill -->
+    <header>
+        <div class="logo"><span>MHD</span>NIHAD</div>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <!-- Volumetric 3D Glass Slider Toggle Switch -->
+        <div class="theme-toggle-wrapper">
+            <div class="glass-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                <div class="toggle-knob">
+                    <i class="bx bx-moon"></i>
+                </div>
+                <span class="toggle-label">Dark</span>
+            </div>
+        </div>
+        
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- Starry & Stardust Hero Section -->
+    <section id="home" class="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="home-content scroll-scale">
+            <span class="editorial-tag scroll-scale">SYSTEM INITIALIZED</span>
+            <h1>Hi! I'm MHD NIHAD</h1>
+            <div class="change-text">
+                <span class="prefix-text">And I'm a&nbsp;</span>
+                <span class="word-wrapper">
+                    <span class="word">Cybersecurity Specialist</span>
+                    <span class="word">Full-Stack Developer</span>
+                    <span class="word">Flutter App Developer</span>
+                    <span class="word">Creative UI/UX Designer</span>
+                </span>
+            </div>   
+            
+            <p>A cybersecurity researcher, mobile app developer, and full-stack engineer. I design and build secure, high-performance digital environments, blending robust backend defense with elegant modern user experiences.</p>
+            
+            <div class="info-text">
+                <div class="email-info">
+                    <h5>Email</h5>
+                    <span>mhdnihadv@gmail.com</span>
+                </div>
+                <div class="insta-info">
+                    <h5>Instagram</h5>
+                    <span>_nihaaaaad</span>
+                </div>
+            </div>
+            
+            <div class="btn-box">
+                <a href="#contact" class="btn btn-primary">Hire Me Now</a>
+                <a href="images/cv.jpg" class="btn btn-secondary" target="_blank" download="Mohammed_Nihad_CV.jpg">Download CV</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://github.com/MohammedNihadv" aria-label="GitHub" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/mhd-nihad-v-27a397248/" aria-label="LinkedIn" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://instagram.com/_nihaaaaad" aria-label="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Roman Arched Greenhouse Window Overgrown with Ivy Creepers and Subway Daisies -->
+        <div class="home-image scroll-scale">
+            <div class="greenhouse-window-wrapper">
+                <div class="greenhouse-window">
+                    <img src="images/3d_hero_graphic.png" alt="MHD Nihad Cybersecurity & Web Development 3D Graphic" class="window-avatar">
+                    <div class="window-reflection-1"></div>
+                    <div class="window-reflection-2"></div>
+                    <div class="window-ivy-creepers">
+                        <svg viewBox="0 0 360 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- creeping ivy branches -->
+                            <path d="M 0 480 Q 70 380 110 280 T 130 100 Q 140 50 170 20" stroke="rgba(6, 78, 59, 0.4)" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 360 480 Q 290 380 250 280 T 230 110 Q 210 40 190 20" stroke="rgba(6, 78, 59, 0.4)" stroke-width="3" stroke-linecap="round"/>
+                            <!-- ivy leaves -->
+                            <path d="M 110 280 Q 90 260 70 280 Q 80 300 110 280 Z" fill="#10b981" opacity="0.85"/>
+                            <path d="M 250 280 Q 270 260 290 280 Q 280 300 250 280 Z" fill="#047857" opacity="0.85"/>
+                            <path d="M 130 100 Q 110 80 90 100 Q 100 120 130 100 Z" fill="#059669" opacity="0.9"/>
+                            <path d="M 230 110 Q 250 90 270 110 Q 260 130 230 110 Z" fill="#10b981" opacity="0.9"/>
+                            <path d="M 170 20 Q 150 0 130 15 Q 145 35 170 20 Z" fill="#34d399" opacity="0.95"/>
+                            
+                            <!-- Overgrown Subway Yellow/White Daisies at Sill Base -->
+                            <circle cx="80" cy="440" r="10" fill="#f8fafc"/>
+                            <circle cx="80" cy="440" r="4" fill="#fbbf24"/>
+                            
+                            <circle cx="150" cy="430" r="12" fill="#f8fafc"/>
+                            <circle cx="150" cy="430" r="5" fill="#fbbf24"/>
+                            
+                            <circle cx="220" cy="445" r="9" fill="#f8fafc"/>
+                            <circle cx="220" cy="445" r="4" fill="#fbbf24"/>
+ 
+                            <circle cx="290" cy="425" r="14" fill="#f8fafc"/>
+                            <circle cx="290" cy="425" r="6" fill="#fbbf24"/>
+                            
+                            <circle cx="110" cy="450" r="8" fill="#f8fafc"/>
+                            <circle cx="110" cy="450" r="3" fill="#fbbf24"/>
+ 
+                            <circle cx="250" cy="435" r="11" fill="#f8fafc"/>
+                            <circle cx="250" cy="435" r="5" fill="#fbbf24"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-ring"></div>
+                <div class="orbital-ring-outer"></div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Editorial About Section -->
+    <section id="about" class="about">
+        <div class="img-about-container">
+            <div class="about-frame">
+                <img src="images/about_profile.png" alt="Mohammed Nihad at Workstation">
+            </div>
+            <!-- Floating Metrics Chips -->
+            <div class="floating-stat info-about1 glass-panel">
+                <span>4+</span>
+                <p>Years Experience</p>
+            </div>
+            <div class="floating-stat info-about2 glass-panel">
+                <span>15+</span>
+                <p>Projects Crafted</p>
+            </div>
+            <div class="floating-stat info-about3 glass-panel">
+                <span>SOC</span>
+                <p>Monitoring & VAPT</p>
+            </div>
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span class="editorial-tag scroll-scale">DEVELOPER BIO</span>
+            <span class="subtitle">Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A relentless quest to master digital architecture and defense</h3>
+            <p>From the moment I cracked open my first computer case, I’ve been on a quest to master both digital defenses and the art of modern application development. As a cybersecurity researcher and software engineer, I safeguard digital systems while engineering state-of-the-art web and mobile solutions. I balance robust security architecture with creative, pixel-perfect user interface design.</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn btn-primary">Connect With Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glowing Services Section with Tech Capsules -->
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span class="editorial-tag scroll-scale">PROFESSIONAL SERVICES</span>
+            <span>What I will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="section-services scroll-bottom">
+            <!-- Service 1 -->
+            <div class="Service-box glass-panel">
+                <!-- Tech Badge Group -->
+                <div class="tech-chips-group">
+                    <span class="tech-chip">Threat Intel</span>
+                    <span class="tech-chip">Pen-Testing</span>
+                    <span class="tech-chip">SIEM</span>
+                </div>
+                <div class="service-icon">
+                    <i class="bx bx-shield"></i>
+                </div>
+                <h3>Cyber Analysis</h3>
+                <p>Analyzing systems, network layouts, and threat databases to detect, isolate, and mitigate vulnerabilities before breaches occur. Specializing in malware analysis, network monitoring, and implementing robust encryption practices to maintain absolute digital integrity.</p>
+                <div class="service-btn">
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="Service-box glass-panel">
+                <!-- Tech Badge Group -->
+                <div class="tech-chips-group">
+                    <span class="tech-chip">React</span>
+                    <span class="tech-chip">Node.js</span>
+                    <span class="tech-chip">SaaS Arch</span>
+                </div>
+                <div class="service-icon">
+                    <i class="bx bx-code-alt"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Architecting sleek, modern, and responsive web applications using clean HTML, modular CSS structures, and robust JavaScript engines. Building pixel-perfect, highly engaging portals that scale smoothly across mobile, tablet, and desktop formats.</p>
+                <div class="service-btn">
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div> 
+
+            <!-- Service 3 -->
+            <div class="Service-box glass-panel">
+                <!-- Tech Badge Group -->
+                <div class="tech-chips-group">
+                    <span class="tech-chip">Flutter</span>
+                    <span class="tech-chip">Dart</span>
+                    <span class="tech-chip">REST APIs</span>
+                </div>
+                <div class="service-icon">
+                    <i class="bx bx-mobile-alt"></i>
+                </div>
+                <h3>Mobile Development</h3>
+                <p>Designing and developing high-performance, cross-platform mobile applications using Flutter and Dart. Engineering clean UI/UX states, responsive layout engines, geolocation services, and robust APIs to connect food apps and custom tools seamlessly.</p>
+                <div class="service-btn">
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>    
+        </div>
+    </section> 
+
+    <!-- Interactive Skills Section -->
+    <section id="skill" class="skills">
+        <div class="main-text scroll-scale">
+            <span class="editorial-tag scroll-scale">CAPACITY INDICATORS</span>
+            <span>Technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main scroll-scale">
+            <!-- Part 1: Grid of 4 Technical Domain Expertise Cards -->
+            <div class="skill-domains-container">
+                <div class="skill-domains-grid">
+                    <!-- Domain Card 1: Cybersecurity -->
+                    <div class="skill-domain-card glass-panel">
+                        <div class="domain-header">
+                            <div class="domain-icon">
+                                <i class="bx bxs-shield-alt"></i>
+                            </div>
+                            <h3>Cybersecurity & Pen-Testing</h3>
+                        </div>
+                        <ul class="domain-skills-list">
+                            <li><i class="bx bx-check-shield text-accent"></i> SOC Monitoring & Analysis</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> VAPT & Ethical Hacking</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Bug Bounty Methodologies</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Reconnaissance & Enumeration</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Malware Behavior Simulation</li>
+                        </ul>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Expertise Level</p>
+                                <span>88%</span>
+                            </div>
+                            <div class="bar">
+                                <span class="skill-progress" data-width="88%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Domain Card 2: Mobile Development -->
+                    <div class="skill-domain-card glass-panel">
+                        <div class="domain-header">
+                            <div class="domain-icon">
+                                <i class="bx bx-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile App Development</h3>
+                        </div>
+                        <ul class="domain-skills-list">
+                            <li><i class="bx bx-check-shield text-accent"></i> Flutter & Dart Ecosystem</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Cross-Platform Architecture</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> State Management (Provider, Bloc)</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Local Storage (Hive, SQLite)</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Firebase Integration & Auth</li>
+                        </ul>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Expertise Level</p>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar">
+                                <span class="skill-progress" data-width="85%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Domain Card 3: Full-Stack Web Development -->
+                    <div class="skill-domain-card glass-panel">
+                        <div class="domain-header">
+                            <div class="domain-icon">
+                                <i class="bx bx-code-alt"></i>
+                            </div>
+                            <h3>Full-Stack Web Engineering</h3>
+                        </div>
+                        <ul class="domain-skills-list">
+                            <li><i class="bx bx-check-shield text-accent"></i> MERN Stack (Mongo, Express, React, Node)</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> RESTful API Design & Integration</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> JWT Auth & Role-Based Access</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Responsive UI (Tailwind CSS, Bootstrap)</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Version Control (Git & GitHub)</li>
+                        </ul>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Expertise Level</p>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar">
+                                <span class="skill-progress" data-width="80%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Domain Card 4: Scripting & Automation -->
+                    <div class="skill-domain-card glass-panel">
+                        <div class="domain-header">
+                            <div class="domain-icon">
+                                <i class="bx bxs-terminal"></i>
+                            </div>
+                            <h3>Scripting & Automation</h3>
+                        </div>
+                        <ul class="domain-skills-list">
+                            <li><i class="bx bx-check-shield text-accent"></i> Python & Bash Programming</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Task Automation & Cron Jobs</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Local Telemetry Logging Tools</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> Docker Sandboxing & Containers</li>
+                            <li><i class="bx bx-check-shield text-accent"></i> System Event Listeners & Logs</li>
+                        </ul>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Expertise Level</p>
+                                <span>78%</span>
+                            </div>
+                            <div class="bar">
+                                <span class="skill-progress" data-width="78%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2: Professional circular progress gauges underneath -->
+            <div class="skill-professional-container">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <!-- Gauge 1 -->
+                    <div class="box glass-panel">
+                        <div class="circle">
+                            <svg>
+                                <circle cx="50" cy="50" r="50"></circle>
+                                <circle cx="50" cy="50" r="50" class="progress-ring progress-ring-purple" data-percent="91"></circle>
+                            </svg>
+                            <div class="text">
+                                <big>91%</big>
+                            </div>
+                        </div>
+                        <small>Team Work</small>
+                    </div>
+                
+                    <!-- Gauge 2 -->
+                    <div class="box glass-panel">
+                        <div class="circle">
+                            <svg>
+                                <circle cx="50" cy="50" r="50"></circle>
+                                <circle cx="50" cy="50" r="50" class="progress-ring" data-percent="93"></circle>
+                            </svg>
+                            <div class="text">
+                                <big>93%</big>
+                            </div>
+                        </div>
+                        <small>Creativity</small>
+                    </div>
+            
+                    <!-- Gauge 3 -->
+                    <div class="box glass-panel">
+                        <div class="circle">
+                            <svg>
+                                <circle cx="50" cy="50" r="50"></circle>
+                                <circle cx="50" cy="50" r="50" class="progress-ring progress-ring-purple" data-percent="70"></circle>
+                            </svg>
+                            <div class="text">
+                                <big>70%</big>
+                            </div>
+                        </div>
+                        <small>Project Management</small>
+                    </div>
+ 
+                    <!-- Gauge 4 -->
+                    <div class="box glass-panel">
+                        <div class="circle">
+                            <svg>
+                                <circle cx="50" cy="50" r="50"></circle>
+                                <circle cx="50" cy="50" r="50" class="progress-ring" data-percent="80"></circle>
+                            </svg>
+                            <div class="text">
+                                <big>80%</big>
+                            </div>
+                        </div>
+                        <small>Communication</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Coverflow Projects Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="main-text scroll-scale">
+            <span class="editorial-tag scroll-scale">PORTFOLIO</span>
+            <span>Showcasing my works</span>
+            <h2>Latest Projects</h2>
+        </div>
+
+        <div class="coverflow-wrapper scroll-scale">
+            <!-- 3D Coverflow Track -->
+            <div class="coverflow-container">
+                <!-- Project 1 -->
+                <div class="coverflow-card" data-index="0">
+                    <span class="card-badge">1 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_brightify.png" alt="Brightify E-Commerce Platform">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">React</span>
+                            <span class="tech-chip">E-Commerce</span>
+                        </div>
+                        <h3>Brightify Lighting</h3>
+                        <p>Developed and launched a live e-commerce platform for a lighting solutions business, handling real-world transactions and catalog navigation.</p>
+                        <a href="https://github.com/MohammedNihadv/Brightify-Ecommerce-Lighting-Platform" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="coverflow-card" data-index="1">
+                    <span class="card-badge">2 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_tango.png" alt="Tropical Tango Mobile Food App">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">Dart</span>
+                        </div>
+                        <h3>Tropical Tango</h3>
+                        <p>Elevating food ordering with a gorgeous Flutter and Dart cross-platform mobile application, connecting Kerala users directly to local eateries.</p>
+                        <a href="https://github.com/MohammedNihadv/Tropical-Tango" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="coverflow-card" data-index="2">
+                    <span class="card-badge">3 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_cyber_demo.png" alt="Cybersecurity Demonstration Sandbox">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">Pen-Test</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <h3>Security Awareness Demo</h3>
+                        <p>A web-based social engineering simulation showing how attackers exploit browser permissions. Built in a safe sandbox for security training.</p>
+                        <a href="https://github.com/MohammedNihadv/Cybersecurity-Awareness-Demonstration" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="coverflow-card" data-index="3">
+                    <span class="card-badge">4 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_keylogger.png" alt="Advanced Python Event Keylogger Tool V2">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Ethical Hacking</span>
+                        </div>
+                        <h3>Advanced Keylogger V2</h3>
+                        <p>Stealthy ethical audit tool built in Python. Logs keystrokes, compiles mouse telemetry, and registers media diagnostics (screenshots, webcam).</p>
+                        <a href="https://github.com/MohammedNihadv/keylogger--v2" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="coverflow-card" data-index="4">
+                    <span class="card-badge">5 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_restaurant.png" alt="India Restaurant Pattambi Showcase">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">HTML/CSS</span>
+                            <span class="tech-chip">Vanilla JS</span>
+                        </div>
+                        <h3>India Restaurant</h3>
+                        <p>A detailed online menu and dining reservation portal for the "India" restaurant located in Pattambi, Kerala, featuring responsive layouts.</p>
+                        <a href="https://github.com/MohammedNihadv/Food-App" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="coverflow-card" data-index="5">
+                    <span class="card-badge">6 / 6</span>
+                    <div class="card-image">
+                        <img src="images/project_portfolio.png" alt="Creative Overgrown Glasshouse Portfolio sanctuary">
+                    </div>
+                    <div class="card-details">
+                        <div class="tech-chips-group">
+                            <span class="tech-chip">HTML/CSS/JS</span>
+                            <span class="tech-chip">Parallax</span>
+                        </div>
+                        <h3>Portfolio Sanctuary</h3>
+                        <p>This premium, overgrown botanical glasshouse personal developer portfolio itself. Features scroll parallax foliage and stardust canvas particle engines.</p>
+                        <a href="https://github.com/MohammedNihadv/Portfolio" class="repo-link" target="_blank"><i class="bx bx-link-external"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3D Coverflow Controls -->
+            <div class="coverflow-controls">
+                <button class="control-btn prev-btn" aria-label="Previous Project"><i class="bx bx-chevron-left"></i></button>
+                <div class="coverflow-bullets"></div>
+                <button class="control-btn next-btn" aria-label="Next Project"><i class="bx bx-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frosted Glass Contact Form -->
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span class="editorial-tag scroll-scale">CONTACT CHANNELS</span>
+            <span>Send me a message</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form action="#" class="scroll-bottom glass-panel" style="padding: 45px; border-radius: 20px;">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" id="name" required autocomplete="name">
+                <input type="email" placeholder="Your Email" id="email" required autocomplete="email">
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="Your City/Address" id="address" autocomplete="street-address">
+                <input type="tel" placeholder="Phone Number" id="phone" autocomplete="tel">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message Here..." id="message" required></textarea>
+            <div class="btn-box formbtn">
+                <button type="button" class="btn btn-primary" onclick="sendMail()">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Elegant Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 by MHD NIHAD || All Rights Reserved</p>
+        <a href="#home" aria-label="Scroll Back to Top"><i class="bx bx-chevron-up"></i></a>
+    </footer>
+
+    <!-- Libraries and Core Script -->
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
