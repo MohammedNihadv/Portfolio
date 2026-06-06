@@ -373,6 +373,36 @@ if (themeToggleBtn) {
 }
 
 
+// --- Custom Toast Notification Helper ---
+const showToast = (message, type = "success") => {
+    let container = document.querySelector(".toast-container");
+    if (!container) {
+        container = document.createElement("div");
+        container.className = "toast-container";
+        document.body.appendChild(container);
+    }
+
+    const toast = document.createElement("div");
+    toast.className = `toast ${type}`;
+
+    const iconClass = type === "success" ? "bx bx-check-circle" : "bx bx-error-circle";
+    toast.innerHTML = `
+        <div class="toast-icon"><i class="${iconClass}"></i></div>
+        <div class="toast-message">${message}</div>
+    `;
+
+    container.appendChild(toast);
+
+    // Auto-remove toast after 4 seconds
+    setTimeout(() => {
+        toast.classList.add("hide");
+        setTimeout(() => {
+            toast.remove();
+        }, 500);
+    }, 4000);
+};
+
+
 // --- Contact EmailJS Integration ---
 function sendMail() {
     const nameEl = document.getElementById("name");
@@ -393,7 +423,7 @@ function sendMail() {
     const message = messageEl.value.trim();
 
     if (!name || !email || !message) {
-        alert("Please complete the required fields: Name, Email, and Message.");
+        showToast("Please complete the required fields: Name, Email, and Message.", "error");
         return;
     }
 
@@ -415,7 +445,7 @@ function sendMail() {
 
     emailjs.send("service_stk0ztj", "template_e5wrwnb", params, "YcJwrN5YTckjZ55kt")
         .then(() => {
-            alert("Message sent successfully! Thank you.");
+            showToast("Message sent successfully! Thank you.", "success");
             nameEl.value = "";
             emailEl.value = "";
             addressEl.value = "";
@@ -427,7 +457,7 @@ function sendMail() {
         .catch((error) => {
             console.error("EmailJS failed to deliver message:", error);
             const errorMsg = error && error.text ? error.text : (error && error.message ? error.message : "Unknown error");
-            alert(`Delivery failed: ${errorMsg}\n\nPlease check that your Service ID, Template ID, and Public Key are correct on your EmailJS dashboard.`);
+            showToast(`Delivery failed: ${errorMsg}. Please check your dashboard setup.`, "error");
             btn.innerHTML = originalText;
             btn.disabled = false;
         });
